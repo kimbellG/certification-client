@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1151.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.filippenkov.certification_client.controllers.managers.ChoiceDetailController">
+   <children>
+      <TableView fx:id="detailTable" layoutX="120.0" layoutY="56.0" prefHeight="481.0" prefWidth="911.0">
+         <columns>
+            <TableColumn fx:id="detailNameColumn" prefWidth="551.0" text="Название" />
+            <TableColumn fx:id="detailNumber" prefWidth="359.0" text="Идентификационный номер" />
+         </columns>
+      </TableView>
+      <Button fx:id="choiceDetailButton" layoutX="120.0" layoutY="560.0" mnemonicParsing="false" onAction="#onChoiceDetail" prefHeight="24.0" prefWidth="911.0" text="Выбрать" />
+   </children>
+</AnchorPane>

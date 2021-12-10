@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="686.0" prefWidth="1165.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.filippenkov.certification_client.controllers.leads.MainWindowController">
+   <children>
+      <TableView fx:id="ShapeButton" layoutX="87.0" layoutY="75.0" prefHeight="494.0" prefWidth="945.0">
+        <columns>
+          <TableColumn fx:id="IDColumn" prefWidth="159.0" text="ID" />
+            <TableColumn fx:id="DetailColumn" prefWidth="257.0" text="Detail" />
+            <TableColumn fx:id="companyColumn" prefWidth="342.0" text="Company" />
+          <TableColumn fx:id="stageColumn" minWidth="0.0" prefWidth="184.0" text="Stage" />
+        </columns>
+      </TableView>
+      <Button fx:id="LeadDetailButton" layoutX="87.0" layoutY="569.0" mnemonicParsing="false" onAction="#onLeadDetailButton" prefHeight="28.0" prefWidth="195.0" text="Детали сделки" />
+      <Button fx:id="manageButton" layoutX="672.0" layoutY="569.0" mnemonicParsing="false" onAction="#onManageButton" prefHeight="28.0" prefWidth="195.0" text="Управление..." />
+      <Button fx:id="pieChartButton" layoutX="867.0" layoutY="569.0" mnemonicParsing="false" onAction="#onPieChartButton" prefHeight="28.0" prefWidth="164.0" text="График" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.filippenkov.certification_client.controllers.managers.LaboratoryController">
+   <children>
+      <TableView fx:id="labTable" layoutX="53.0" layoutY="55.0" prefHeight="435.0" prefWidth="770.0">
+        <columns>
+          <TableColumn fx:id="labIDColumn" prefWidth="140.0" text="ID" />
+          <TableColumn fx:id="labNameColumn" prefWidth="267.0" text="Название" />
+            <TableColumn fx:id="labAccNumberColumn" prefWidth="195.0" text="Аттестат аккредитации" />
+            <TableColumn fx:id="labDateUntilColumn" prefWidth="167.0" text="Активен до" />
+        </columns>
+      </TableView>
+      <Button fx:id="addLabButton" layoutX="689.0" layoutY="515.0" mnemonicParsing="false" onAction="#onAddLab" prefHeight="24.0" prefWidth="134.0" text="Добавить лабораторию" />
+      <Button fx:id="updateTableButton" layoutX="624.0" layoutY="14.0" mnemonicParsing="false" onAction="#onUpdateTable" prefHeight="24.0" prefWidth="198.0" text="Обновить таблицу" />
+      <TextField fx:id="labNameField" layoutX="53.0" layoutY="515.0" promptText="Введите название лаборатории..." />
+      <TextField fx:id="labNumberField" layoutX="251.0" layoutY="515.0" promptText="Введите аттестат..." />
+      <DatePicker fx:id="labUntilDateField" layoutX="453.0" layoutY="515.0" />
+      <Label layoutX="53.0" layoutY="499.0" prefHeight="16.0" prefWidth="171.0" text="Название:" />
+      <Label layoutX="251.0" layoutY="499.0" prefHeight="16.0" prefWidth="171.0" text="Аттестат аккредитации:" />
+      <Label layoutX="453.0" layoutY="499.0" prefHeight="16.0" prefWidth="171.0" text="Действителен до:" />
+      <Label layoutX="53.0" layoutY="539.0" prefHeight="42.0" prefWidth="171.0" textFill="RED" />
+      <Label fx:id="errorLabel" layoutX="52.0" layoutY="539.0" prefHeight="24.0" prefWidth="770.0" textFill="RED" />
+   </children>
+</AnchorPane>

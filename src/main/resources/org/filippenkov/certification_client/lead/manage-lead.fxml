@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="762.0" prefWidth="1195.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.filippenkov.certification_client.controllers.managers.LeadController">
+   <children>
+      <Button fx:id="addLeadButton" layoutX="910.0" layoutY="590.0" mnemonicParsing="false" onAction="#onAddLeadButton" prefHeight="24.0" prefWidth="160.0" text="Добавить сделку" />
+      <Button fx:id="LeadDetailButton" layoutX="125.0" layoutY="14.0" mnemonicParsing="false" onAction="#onLeadDetailButton" prefHeight="24.0" prefWidth="179.0" text="Детали сделки" />
+      <TableView fx:id="ShapeButton" layoutX="125.0" layoutY="47.0" prefHeight="494.0" prefWidth="945.0">
+         <columns>
+            <TableColumn fx:id="IDColumn" prefWidth="159.0" text="ID" />
+            <TableColumn fx:id="DetailColumn" prefWidth="257.0" text="Detail" />
+            <TableColumn fx:id="companyColumn" prefWidth="342.0" text="Company" />
+            <TableColumn fx:id="stageColumn" minWidth="0.0" prefWidth="184.0" text="Stage" />
+         </columns>
+      </TableView>
+      <Button fx:id="deleteLeadButton" layoutX="910.0" layoutY="560.0" mnemonicParsing="false" onAction="#onDeleteLeadButton" prefHeight="24.0" prefWidth="160.0" text="Удалить сделку" />
+      <GridPane layoutX="563.0" layoutY="585.0" prefHeight="34.0" prefWidth="315.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="choisenCompanyLabel" prefHeight="39.0" prefWidth="137.0" />
+            <Button fx:id="choiceCompanyButton" mnemonicParsing="false" onAction="#onChoiceCompany" prefHeight="24.0" prefWidth="160.0" text="Выбрать компанию" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="243.0" layoutY="585.0" prefHeight="34.0" prefWidth="278.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="choiceDetailLabel" prefHeight="39.0" prefWidth="137.0" />
+            <Button fx:id="choiceDetailButton" mnemonicParsing="false" onAction="#onChoiceDetail" prefHeight="24.0" prefWidth="154.0" text="Выбрать деталь" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
